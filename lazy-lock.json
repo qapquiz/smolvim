@@ -1,0 +1,8 @@
+{
+  "catppuccin": { "branch": "main", "commit": "4fbab1f01488718c3d54034a473d0346346b90e3" },
+  "lazy.nvim": { "branch": "main", "commit": "96584866b9c5e998cbae300594d0ccfd0c464627" },
+  "mini.files": { "branch": "main", "commit": "8e4541ee5d2c3d37c49fa0953c0255066939b09a" },
+  "mini.nvim": { "branch": "main", "commit": "ea1af8c7d5e72148cae8a04e9887322a53fe66cf" },
+  "mini.pick": { "branch": "main", "commit": "7d4e412f77fb94ab747d6a9ff0a27891a82fa35d" },
+  "nvim-treesitter": { "branch": "master", "commit": "c4da7945641b2e74915313cd1e608b43877a56b7" }
+}
