@@ -14,7 +14,7 @@ return {
 	{
 		'nvim-treesitter/nvim-treesitter',
 		build = ':TSUpdate',
-		cmd = { "BufReadPre", "BufNewFile" },
+		event = { 'BufReadPre', 'BufNewFile' },
 		config = function()
 			local configs = require('nvim-treesitter.configs')
 
@@ -25,7 +25,7 @@ return {
 	-- lspconfig
 	{
 		'neovim/nvim-lspconfig',
-		cmd = { "BufReadPre", "BufNewFile" },
+		event = { 'BufReadPre', 'BufNewFile' },
 		config = function()
 			local lspconfig = require('lspconfig')
 
