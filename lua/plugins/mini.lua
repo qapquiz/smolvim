@@ -9,8 +9,10 @@ return {
 		keys = {
 			{ '<leader>ff', '<cmd>Pick files<cr>' },
 			{ '<leader>fw', '<cmd>Pick grep_live<cr>' },
+			{ '<leader>fb', '<cmd>Pick buffers<cr>' },
 		},
 	},
+	{ 'echasnovski/mini.starter', version = false, config = true },
 	{
 		'echasnovski/mini.files',
 		version = false,
