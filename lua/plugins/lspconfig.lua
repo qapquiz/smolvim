@@ -1,12 +1,12 @@
 local treesitter_options = {
-	ensure_installed = { 'lua' },
+	ensure_installed = { 'lua', 'javascript', 'typescript', 'rust' },
 	sync_install = false,
 	highlight = { enable = true },
 	indent = { enable = true },
 }
 
 local mason_options = {
-	ensure_installed = { 'lua_ls' },
+	ensure_installed = { 'lua_ls', 'tsserver', 'rust_analyzer' },
 }
 
 return {

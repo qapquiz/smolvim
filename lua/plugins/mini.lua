@@ -23,7 +23,7 @@ return {
 			local MiniFiles = require('mini.files')
 
 			return {
-				{ '<C-n>', function() MiniFiles.open() end },
+				{ '<leader>e', function() MiniFiles.open() end },
 			}
 		end,
 	},
