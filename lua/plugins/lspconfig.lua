@@ -6,7 +6,7 @@ local treesitter_options = {
 }
 
 local mason_options = {
-	ensure_installed = { "lua_ls" },
+	ensure_installed = { 'lua_ls' },
 }
 
 return {
@@ -22,13 +22,9 @@ return {
 	},
 
 	-- lspconfig
-	{ 'williamboman/mason.nvim', config = true },
-	{
-		'williamboman/mason-lspconfig.nvim',
-		opts = mason_options,
-	},
 	{
 		'neovim/nvim-lspconfig',
+		cmd = { "BufReadPre", "BufNewFile" },
 		config = function()
 			local lspconfig = require('lspconfig')
 
@@ -52,5 +48,16 @@ return {
 				})
 			end
 		end,
+		dependencies = {
+			{
+				'williamboman/mason.nvim',
+				cmd = { 'Mason', 'MasonInstall', 'MasonUninstall', 'MasonUninstallAll', 'MasonUpdate' },
+				config = true,
+			},
+			{
+				'williamboman/mason-lspconfig.nvim',
+				opts = mason_options,
+			},
+		},
 	}
 }

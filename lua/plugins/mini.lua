@@ -19,10 +19,12 @@ return {
 	{
 		'echasnovski/mini.files',
 		version = false,
-		config = function()
+		keys = function()
 			local MiniFiles = require('mini.files')
 
-			vim.keymap.set('n', '<C-n>', function() MiniFiles.open() end)
+			return {
+				{ '<C-n>', function() MiniFiles.open() end },
+			}
 		end,
 	},
 	{
@@ -43,6 +45,7 @@ return {
 	},
 	{
 		'echasnovski/mini.pairs',
+		event = "InsertEnter",
 		version = false,
 		config = true,
 	},
