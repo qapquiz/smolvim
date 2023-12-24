@@ -8,6 +8,7 @@
   "mini.pairs": { "branch": "main", "commit": "552062017ff207e1f35f7028bfb3f27c7421d22d" },
   "mini.pick": { "branch": "main", "commit": "7d4e412f77fb94ab747d6a9ff0a27891a82fa35d" },
   "mini.statusline": { "branch": "main", "commit": "7a6ffc0ae966aff5e2bb3e1ba53d625a7db34094" },
+  "neodev.nvim": { "branch": "main", "commit": "269051a7093fa481128904a33a6c4e1ca8de4340" },
   "nvim-lspconfig": { "branch": "master", "commit": "9099871a7c7e1c16122e00d70208a2cd02078d80" },
   "nvim-treesitter": { "branch": "master", "commit": "27f68c0b6a87cbad900b3d016425450af8268026" },
   "nvim-web-devicons": { "branch": "master", "commit": "43aa2ddf476012a2155f5f969ee55ab17174da7a" }
