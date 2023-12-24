@@ -49,4 +49,16 @@ return {
 		version = false,
 		config = true,
 	},
+	{
+		'echasnovski/mini.comment',
+		version = false,
+		opts = {
+			mappings = {
+				comment = '<leader>/',
+				comment_line = '<leader>/',
+				comment_visual = '<leader>/',
+				textobject = '<leader>/',
+			}
+		},
+	},
 }

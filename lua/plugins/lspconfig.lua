@@ -14,6 +14,7 @@ return {
 	{
 		'nvim-treesitter/nvim-treesitter',
 		build = ':TSUpdate',
+		cmd = { "BufReadPre", "BufNewFile" },
 		config = function()
 			local configs = require('nvim-treesitter.configs')
 
