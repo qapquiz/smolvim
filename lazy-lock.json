@@ -9,6 +9,7 @@
   "mini.pick": { "branch": "main", "commit": "7d4e412f77fb94ab747d6a9ff0a27891a82fa35d" },
   "mini.starter": { "branch": "main", "commit": "3bdbf65a821a6cb10d2de5b44ac6a7c172ef5cb3" },
   "mini.statusline": { "branch": "main", "commit": "7a6ffc0ae966aff5e2bb3e1ba53d625a7db34094" },
+  "mini.tabline": { "branch": "main", "commit": "a89044e536853a24478cd96b65ab98cebea37080" },
   "neodev.nvim": { "branch": "main", "commit": "269051a7093fa481128904a33a6c4e1ca8de4340" },
   "nvim-lspconfig": { "branch": "master", "commit": "9099871a7c7e1c16122e00d70208a2cd02078d80" },
   "nvim-treesitter": { "branch": "master", "commit": "27f68c0b6a87cbad900b3d016425450af8268026" },

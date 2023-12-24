@@ -7,3 +7,7 @@ vim.cmd('set relativenumber')
 
 vim.g.mapleader = ' '
 
+-- mappings
+vim.keymap.set('n', '<TAB>', '<cmd>bnext<cr>')
+vim.keymap.set('n', '<S-TAB>', '<cmd>bprevious<cr>')
+

@@ -1,6 +1,9 @@
 return {
 	-- mini.nvim
-	{ 'echasnovski/mini.nvim', version = false },
+	{
+		'echasnovski/mini.nvim',
+		version = false
+	},
 	{
 		'echasnovski/mini.pick',
 		version = false,
@@ -25,10 +28,18 @@ return {
 	{
 		'echasnovski/mini.statusline',
 		version = false,
+		config = true,
 		dependencies = {
 			{ "nvim-tree/nvim-web-devicons" },
 		},
+	},
+	{
+		'echasnovski/mini.tabline',
+		version = false,
 		config = true,
+		dependencies = {
+			{ "nvim-tree/nvim-web-devicons" },
+		},
 	},
 	{
 		'echasnovski/mini.pairs',
