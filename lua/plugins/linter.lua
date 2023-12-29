@@ -1,4 +1,10 @@
-local linters = { 'luacheck' }
+local linters = {
+	-- lua
+	'luacheck',
+
+	-- web
+	'biome',
+}
 
 return {
 	{
@@ -9,6 +15,8 @@ return {
 			events = { "BufWritePost", "BufReadPost", "InsertLeave" },
 			linters_by_ft = {
 				lua = { 'luacheck' },
+				js = { 'biome' },
+				ts = { 'biome' },
 			},
 		},
 		config = function(_, opts)
