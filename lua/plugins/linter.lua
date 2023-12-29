@@ -15,8 +15,10 @@ return {
 			events = { "BufWritePost", "BufReadPost", "InsertLeave" },
 			linters_by_ft = {
 				lua = { 'luacheck' },
-				js = { 'biome' },
-				ts = { 'biome' },
+				javascript = { 'biomejs' },
+				javascriptreact = { 'biomejs' },
+				typescript = { 'biomejs' },
+				typescriptreact = { 'biomejs' },
 			},
 		},
 		config = function(_, opts)
@@ -31,7 +33,7 @@ return {
 			lint.linters_by_ft = opts.linters_by_ft
 
 			vim.api.nvim_create_autocmd(
-				{ 'BufWritePost' },
+				{ 'BufWritePost', 'BufEnter' },
 				{
 					callback = function()
 						lint.try_lint()
