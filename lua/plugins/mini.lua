@@ -17,6 +17,16 @@ return {
 	},
 	{ 'echasnovski/mini.starter', version = false, config = true },
 	{
+		'echasnovski/mini.basics',
+		version = false,
+		opts = {
+			mappings = {
+				windows = true,
+				move_with_alt = true,
+			},
+		},
+	},
+	{
 		'echasnovski/mini.files',
 		version = false,
 		keys = function()
