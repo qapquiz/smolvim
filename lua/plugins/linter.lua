@@ -1,7 +1,4 @@
 local linters = {
-	-- lua
-	'luacheck',
-
 	-- web
 	'biome',
 }
@@ -14,7 +11,6 @@ return {
 			-- Events to trigger linter
 			events = { "BufWritePost", "BufReadPost", "InsertLeave" },
 			linters_by_ft = {
-				lua = { 'luacheck' },
 				javascript = { 'biomejs' },
 				javascriptreact = { 'biomejs' },
 				typescript = { 'biomejs' },
