@@ -1,12 +1,12 @@
 local treesitter_options = {
-	ensure_installed = { 'lua', 'javascript', 'typescript', 'rust' },
+	ensure_installed = { 'lua', 'javascript', 'typescript', 'rust', 'svelte', 'bash' },
 	sync_install = false,
 	highlight = { enable = true },
 	indent = { enable = true },
 }
 
 local mason_options = {
-	ensure_installed = { 'lua_ls', 'tsserver', 'rust_analyzer' },
+	ensure_installed = { 'lua_ls', 'tsserver', 'rust_analyzer', 'svelte' },
 }
 
 local mason_lsp_mapping = {
@@ -19,7 +19,7 @@ local mason_lsp_mapping = {
 }
 
 local mason_formatters = {
-	ensure_installed = { 'stylua' },
+	ensure_installed = { 'biome', 'stylua' },
 }
 
 
@@ -114,6 +114,10 @@ return {
 			conform.setup({
 				formatters_by_ft = {
 					lua = { 'stylua' },
+					javascript = { 'biome' },
+					javascriptreact = { 'biome' },
+					typescript = { 'biome' },
+					typescriptreact = { 'biome' },
 				},
 			})
 
