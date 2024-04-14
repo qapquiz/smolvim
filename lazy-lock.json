@@ -17,9 +17,9 @@
   "mini.notify": { "branch": "main", "commit": "f347e3facc67732f0782b97c506bf1146012b15f" },
   "mini.nvim": { "branch": "main", "commit": "efa0eb3dc97398e0510372f61bcf625127ab7a24" },
   "mini.pairs": { "branch": "main", "commit": "04f58f2545ed80ac3b52dd4826e93f33e15b2af6" },
-  "mini.pick": { "branch": "main", "commit": "9f0f9d71dbe97277c67e75e9cfbd4a5224e81c3d" },
-  "mini.starter": { "branch": "main", "commit": "ce222a5b6de50a9963c1eb62aa16ec6d5efca7ee" },
-  "mini.statusline": { "branch": "main", "commit": "568c3b81493233c7a8f07aa2dfff6a1e7627d5a8" },
+  "mini.pick": { "branch": "main", "commit": "219159bdc01a5f3f2c8c3f17a3cccd6f83d2c3f5" },
+  "mini.starter": { "branch": "main", "commit": "a9497931da60bbf04180077ee452ccf3e57af9bd" },
+  "mini.statusline": { "branch": "main", "commit": "b1a8020aead3f12885aa539a46c07b02b036ac05" },
   "mini.tabline": { "branch": "main", "commit": "9b9f5135a55fc2369ee4e64f8b4c22a4b4c5fc01" },
   "neodev.nvim": { "branch": "main", "commit": "ce9a2e8eaba5649b553529c5498acb43a6c317cd" },
   "nvim-cmp": { "branch": "main", "commit": "2fb2a3cf78bbc1b0bea030e8c8728985af1cf302" },
@@ -29,5 +29,4 @@
   "nvim-web-devicons": { "branch": "master", "commit": "3ee60deaa539360518eaab93a6c701fe9f4d82ef" },
   "rustaceanvim": { "branch": "master", "commit": "e2dbf91daed26d4dd7263affbecbf9a36e0096e5" },
   "trouble.nvim": { "branch": "dev", "commit": "10eff94809ecd6ee6cc59f42e9521b9b8a14e9ce" },
-  "vim-tmux-navigator": { "branch": "master", "commit": "38b1d0402c4600543281dc85b3f51884205674b6" }
-}
+  "vim-tmux-navigator": { "branch": "master", "commit": "a26954a585b02a2ac02f87145e204f8798a7cbc2" }

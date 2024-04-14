@@ -121,6 +121,7 @@ return {
 		opts = {
 			server = {
 				on_attach = function (_, bufnr)
+					local opts = {}
 					vim.keymap.set(
 						'n',
 						'<leader>ca',
@@ -137,6 +138,16 @@ return {
 					-- 	end,
 					-- 	{ desc = "Rust debuggables", buffer = bufnr }
 					-- )
+
+					-- lsp keymap
+					vim.keymap.set('n', 'gD', vim.lsp.buf.declaration, opts)
+					vim.keymap.set('n', 'gd', vim.lsp.buf.definition, opts)
+					vim.keymap.set('n', 'K', vim.lsp.buf.hover, opts)
+					vim.keymap.set('n', 'gi', vim.lsp.buf.implementation, opts)
+					vim.keymap.set('n', '<C-k>', vim.lsp.buf.signature_help, opts)
+					vim.keymap.set('n', '<leader>D', vim.lsp.buf.type_definition, opts)
+					vim.keymap.set('n', '<leader>rn', vim.lsp.buf.rename, opts)
+					vim.keymap.set('n', 'gr', vim.lsp.buf.references, opts)
 				end,
 
 				default_settings = {
