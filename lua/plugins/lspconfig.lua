@@ -50,19 +50,6 @@ return {
 			local mason_registry = require('mason-registry')
 			local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
-
-			local has_server_not_installed = false
-			for _, lsp in ipairs(mason_options.ensure_installed) do
-				if not mason_registry.is_installed(mason_lsp_mapping[lsp]) then
-					has_server_not_installed = true
-					break
-				end
-			end
-
-			if has_server_not_installed then
-				vim.cmd('MasonInstallAll')
-			end
-
 			for _, lsp in ipairs(mason_options.ensure_installed) do
 				if mason_registry.is_installed(mason_lsp_mapping[lsp]) then
 					-- for rust use rustaceanvim instead of direct LSP
