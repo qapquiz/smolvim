@@ -1,5 +1,5 @@
 local treesitter_options = {
-	ensure_installed = { 'lua', 'javascript', 'typescript', 'rust', 'svelte', 'bash' },
+	ensure_installed = { 'lua', 'javascript', 'typescript', 'rust', 'svelte', 'bash', 'haskell', },
 	sync_install = false,
 	highlight = { enable = true },
 	indent = { enable = true },
@@ -10,7 +10,8 @@ local mason_options = {
 		'lua_ls',
 		'tsserver',
 		'rust_analyzer',
-		'svelte'
+		'svelte',
+		'hls',
 	},
 }
 
@@ -21,12 +22,12 @@ local mason_lsp_mapping = {
 	stylua = 'stylua',
 	svelte = 'svelte-language-server',
 	tsserver = 'typescript-language-server',
+	hls = 'haskell-language-server',
 }
 
 local mason_formatters = {
 	ensure_installed = { 'biome', 'stylua' },
 }
-
 
 return {
 	-- treesitter
@@ -49,19 +50,6 @@ return {
 			local lspconfig = require('lspconfig')
 			local mason_registry = require('mason-registry')
 			local capabilities = require('cmp_nvim_lsp').default_capabilities()
-
-
-			local has_server_not_installed = false
-			for _, lsp in ipairs(mason_options.ensure_installed) do
-				if not mason_registry.is_installed(mason_lsp_mapping[lsp]) then
-					has_server_not_installed = true
-					break
-				end
-			end
-
-			if has_server_not_installed then
-				vim.cmd('MasonInstallAll')
-			end
 
 			for _, lsp in ipairs(mason_options.ensure_installed) do
 				if mason_registry.is_installed(mason_lsp_mapping[lsp]) then
